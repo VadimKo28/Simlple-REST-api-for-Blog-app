@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'articles/index'
-  resources :users
+  resources :users do
+    resources :articles 
+  end
 end
